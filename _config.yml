@@ -84,12 +84,12 @@ author:
   name             : "Kaihang Zhang"
   avatar           : "kaihangzhang.png"
   bio              : |
-    Institute of Transportation Studies <br>
-    University of California <br>
+    208 Haking Wong Bldg <br>
+    The University of Hong Kong <br>
     <br>
-  location         : "Pok Fu Lam, Hong Kong"
+  location         : "Central and Western, Hong Kong"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=a6n-2TUAAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
