@@ -32,5 +32,5 @@ Publications
 
 Selected Awards
 ======
-Hong Kong PhD Fellowship, Hong Kong, 2022
-Outstanding Graduates of Zhejiang University, Zhejiang, 2021
+- Hong Kong PhD Fellowship, Hong Kong, 2022
+- Outstanding Graduates of Zhejiang University, Zhejiang, 2021
