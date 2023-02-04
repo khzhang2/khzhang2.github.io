@@ -5,13 +5,12 @@ permalink: /workandteach/
 author_profile: true
 ---
 
-**[Zhejiang Provincial Institute of Communication, Planning, Design & Research Co. Ltd.](http://www.zjic.com/), Zhejiang, China**
+## Teaching Assistant
+**[The University of Hong Kong](https://www.hku.hk/), Hong Kong SAR**
 
-Intern Engineer at Department of Planning and Research, July 2020 - August 2020
-
-- Worked collaboratively in a team of three that is dedicated to design transportation planning drafts for two county-level cities (Haining and Pingyang, both have around 1 million population) in Zhejiang province based on the requirements of local government and transportation department.<br>
-- Conducted a field study at Pingyang city; attended a transportation planning meeting for next five years with the local Department of Transportation. Data analysis upon the historical traffic flow, population and road statistics.<br>
-- Designed illustrations for design proposals using Adobe Illustrator and Adobe Photoshop.<br>
+Teaching Assistant, September 2022 - present
+- [ENGG 1320 - Engineers in the Modern  World](https://innoacademy.engg.hku.hk/innoshow1/2019show1-engg1320/) (Instructor: Dr. [Hailong Ye](https://www.civil.hku.hk/pp-yeh.html)), Fall 2022
+- [CIVL 7018 - Data Science in Civil Engineering](https://www.civil.hku.hk/civil_intranet/msc_course_descr.html) (Instructor: Dr. [Jintao Ke](https://www.civil.hku.hk/pp-kejt.html)), Spring 2023
 
 **[Zhejiang University – University of Illinois at Urbana Champaign Institute](https://zjui.intl.zju.edu.cn/en), Zhejiang, China**
 
@@ -22,3 +21,12 @@ Teaching Assistant, September 2018 - May 2021
 - [SE 101 - Engineering Graphics & Design](https://ise.illinois.edu/academics/courses/se101) (Lab Leading TA, Instructor: Prof. [Xinlei Wang](https://abe.illinois.edu/directory/xwang2)), 2020 Spring<br>
 - [CEE 360 - Structural Engineering](https://cee.illinois.edu/academics/courses/CEE360-120208) (Instructor: Dr. [Cristoforo Demartino](https://person.zju.edu.cn/en/cristoforodemartino)), 2020 Fall<br>
 - [SE 101 - Engineering Graphics & Design](https://ise.illinois.edu/academics/courses/se101) (Lab Leading TA, Instructor: Prof. [Xinlei Wang](https://abe.illinois.edu/directory/xwang2)), 2021 Spring
+
+## Internship
+**[Zhejiang Provincial Institute of Communication, Planning, Design & Research Co. Ltd.](http://www.zjic.com/), Zhejiang, China**
+
+Intern Engineer at Department of Planning and Research, July 2020 - August 2020
+
+- Worked collaboratively in a team of three that is dedicated to design transportation planning drafts for two county-level cities (Haining and Pingyang, both have around 1 million population) in Zhejiang province based on the requirements of local government and transportation department.<br>
+- Conducted a field study at Pingyang city; attended a transportation planning meeting for next five years with the local Department of Transportation. Data analysis upon the historical traffic flow, population and road statistics.<br>
+- Designed illustrations for design proposals using Adobe Illustrator and Adobe Photoshop.<br>
