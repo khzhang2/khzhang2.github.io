@@ -6,14 +6,11 @@ author_profile: true
 ---
 
 ## Teaching Assistant
-**The University of Hong Kong, Hong Kong SAR**
-September 2022 - present
+**The University of Hong Kong, Hong Kong SAR**, September 2022 - present
 - [ENGG 1320 - Engineers in the Modern  World](https://innoacademy.engg.hku.hk/innoshow1/2019show1-engg1320/) (Instructor: Dr. [Hailong Ye](https://www.civil.hku.hk/pp-yeh.html)), Fall 2022
 - [CIVL 7018 - Data Science in Civil Engineering](https://www.civil.hku.hk/civil_intranet/msc_course_descr.html) (Instructor: Dr. [Jintao Ke](https://www.civil.hku.hk/pp-kejt.html)), Spring 2023
 
-**Zhejiang University – University of Illinois at Urbana Champaign Institute, Zhejiang, China**
-
-September 2018 - May 2021
+**Zhejiang University – University of Illinois at Urbana Champaign Institute, Zhejiang, China**, September 2018 - May 2021
 - [CEE 195 - About Civil Engineering](https://cee.illinois.edu/academics/courses/CEE195-120208) (Instructor: Prof. [James M. LaFave](https://cee.illinois.edu/directory/profile/jlafave)), 2018 Fall<br>
 - [SE 101 - Engineering Graphics & Design](https://ise.illinois.edu/academics/courses/se101) (Lab Leading TA, Instructor: Prof. [Xinlei Wang](https://abe.illinois.edu/directory/xwang2)), 2019 Spring<br>
 - [SE 101 - Engineering Graphics & Design](https://ise.illinois.edu/academics/courses/se101) (Lab Leading TA, Instructor: Prof. [Xinlei Wang](https://abe.illinois.edu/directory/xwang2)), 2020 Spring<br>
