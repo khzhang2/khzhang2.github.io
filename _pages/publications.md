@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-[ZJUI - TSE Lab](https://zjui.tselab.org), Principal Investigator: Dr. [Simon Hu](https://person.zju.edu.cn/en/simonhu)
+[Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao/home), Principal Investigator: Dr. Jintao Ke.
 
 Publications
 ======
