@@ -22,13 +22,9 @@ Education
 
 Publications
 ======
-[J1] Li, J., Xie, N., **Zhang, K.**, Guo, F., Hu, S., & Chen, X.\* (2022). Network-scale traffic prediction via knowledge transfer and regional MFD analysis. _Transportation Research Part C: Emerging Technologies_, 141, 103719.
-
-[C3] **Zhang, K.**\*, Li, J., Zhou, Q., & Hu, S. (2022, July). Short-term Traffic Prediction with Balanced Domain Adaptation. In _The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)_ (pp. 699-711). ASCE.
-
-[C2] Li, J., **Zhang, K.**, Shen, L., Wang, Z., Guo, F., Angeloudis, P., Chen, X., & Hu, S.\* (2021, September). A Domain Adaptation Framework for Short-term Traffic Prediction. In _2021 IEEE International Intelligent Transportation Systems Conference (ITSC)_ (pp. 3564-3569). IEEE.
-
-[C1] Zhou, Q., Mohammadi, R., Zhao, W., **Zhang, K.**, Zhang, L., Wang, Y., Roncoli, C., & Hu, S.\* (2021, June). Queue Profile Identification at Signalized Intersections with High-Resolution Data from Drones. In _2021 7th International Conference on Models and Technologies for Intelligent Transportation Systems (MT-ITS)_ (pp. 1-6). IEEE.
+<ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Selected Awards
 ======
