@@ -9,6 +9,11 @@ author_profile: true
 
 Publications
 ======
+
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 [J1] Li, J., Xie, N., **Zhang, K.**, Guo, F., Hu, S., & Chen, X.\* (2022). Network-scale traffic prediction via knowledge transfer and regional MFD analysis. _Transportation Research Part C: Emerging Technologies_, 141, 103719.
 
 [C3] **Zhang, K.**\*, Li, J., Zhou, Q., & Hu, S. (2022, July). Short-term Traffic Prediction with Balanced Domain Adaptation. In _The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)_ (pp. 699-711). ASCE.
