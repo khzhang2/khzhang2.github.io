@@ -2,7 +2,6 @@
 layout: archive
 title: "Work and Teach"
 permalink: /workandteach/
-author_profile: true
 ---
 
 ## Teaching Assistant
