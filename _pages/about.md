@@ -29,5 +29,5 @@ Publications
 Selected Awards
 ======
 - Hong Kong PhD Fellowship, Hong Kong, 2022
-- The University of Hong Kong Presidential Scholarship, Hong Konh, 2022
+- The University of Hong Kong Presidential Scholarship, Hong Kong, 2022
 - Outstanding Graduates of Zhejiang University, Zhejiang, 2021
