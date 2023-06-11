@@ -76,6 +76,7 @@ Randomly generate $n_q$ (in codes, it is called num_generated_order) customers o
 
 ### Customer attributes
 #### Customers are defined as pd.DataFrame and are stored in class "platform"
+
 |Attributes|Type|Note|Value|
 |---|---|---|---|
 | node_ID | int | ID of this customer | assigned on generation |
@@ -86,6 +87,7 @@ Randomly generate $n_q$ (in codes, it is called num_generated_order) customers o
 
 ## Rider, platform behaviors
 ### Rider behaviors
+
 |Behavior name                      |Description|When excecute|sup behavior(s)|sub behavior(s)|
 |---                                |---|---|---|---|
 |__init__                           |Initialize the rider as a idle rider, define attributes|On the generation of this rider|n/a||
