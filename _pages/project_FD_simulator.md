@@ -15,8 +15,8 @@ N_v represents number of idle riders, N_b represents number of accumulated order
 
 In this demo, max matching radius r=1 km, max delivery radius R=2 km, batch size (bundling ratio) k=3, matching interval t=0.005 hour. The order arrival rate $\overline{q}=800$ orders/hour and the total number of riders is $N=200$. 5 merchants are spread in the city, in Kennedy Town, HKU, Central, Wan Chai, and Causeway Bay.
 
-
-https://user-images.githubusercontent.com/38817831/219488679-ef1185e9-418f-4f86-9ec3-410203a7fb3e.mp4
+<video src="https://user-images.githubusercontent.com/38817831/219488679-ef1185e9-418f-4f86-9ec3-410203a7fb3e.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 
 ## Features
