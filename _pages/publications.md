@@ -34,7 +34,6 @@ Publications
 ### Food Delivery System Simulator
 - An agent-based model, can be built on a real-world road network
 - More details [here](https://khzhang2.github.io/project/FD_simulator/)
-- Github code and demonstration animation [here](https://github.com/khzhang2/FD_Simulator)
 
 
 ### 2-D Frame Structure Solver Using the Direct Stiffness Method
