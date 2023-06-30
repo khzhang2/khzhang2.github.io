@@ -32,7 +32,7 @@ Publications
 
 ## Open-Sourced Tools
 ### Regional Partitioning of Hong Kong Island and the Kowloon District of Hong Kong City
-- A dataset containing the data (vertices coordinates, connectivity, number of restaurants in each region, and geometry) of 32 regions of the HK island and the KL district.
+- A dataset containing the data of 32 regions of the HK island and the KL district (vertices coordinates, connectivity, number of restaurants in each region, and geometry).
 - More details [here](https://github.com/khzhang2/HK_region_partition)
 
 <img src="../files/hk_partition.png" alt="HK partition results" width="400"/>
