@@ -24,13 +24,18 @@ Publications
 - Public Transportation Optimization Using Continuum Approximation, 2021 Fa
 - Short-term Traffic Forecasting Under Data Insufficient Problems Using Transfer Learning, 2021 Fa
 
-## Projects During Bachelor's
+## Projects During Undergraduate
 - Queue Profile Identification at a Signalized Intersection Using Machine Learning Techniques
 - Real-time Queue Length Estimation at an Isolated Signalized Intersection Using Kalmen Filter
 - CAV Trajectory Optimization for Eco-driving (Using VISSIM-COM)
 - Crowd Dynamics (Pedestrian Simulation) for Evacuation Purpose
 
 ## Open-Sourced Tools
+### Regional Partitioning of Hong Kong Island and the Kowloon District of Hong Kong City
+- A dataset containing the data (vertices coordinates, connectivity, number of restaurants in each region, and geometry) of 32 regions of the HK island and the KL district.
+- More details [here]([https://khzhang2.github.io/project/FD_simulator/](https://github.com/khzhang2/HK_region_partition))
+<img src="../files/hk_partition.png" alt="HK partition results" width="400"/>
+
 ### Food Delivery System Simulator
 - An agent-based model, can be built on a real-world road network
 - More details [here](https://khzhang2.github.io/project/FD_simulator/)
