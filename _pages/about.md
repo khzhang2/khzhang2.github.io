@@ -20,14 +20,18 @@ Education
 
 - Bachelor of Science, Civil Engineering, University of Illinois at Urbana-Champaign, 2021.
 
-Publications
+Publication
 ======
-<ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Li, Junyi, Ningke Xie, Kaihang Zhang, Fangce Guo, Simon Hu, and Xiqun (Michael) Chen. 2022. "Network-Scale Traffic Prediction via Knowledge Transfer and Regional MFD Analysis." _Transportation Research Part C: Emerging Technologies_ 141 (August): 103719. https://doi.org/10.1016/j.trc.2022.103719.
+
+Zhang, Kaihang, Junyi Li, Qishen Zhou, and Simon Hu. 2022. "Short-Term Traffic Prediction with Balanced Domain Adaptation." In _22nd COTA International Conference of Transportation Professionals_, 699–711. Changsha, Hunan Province, China: American Society of Civil Engineers.
+
+Li, Junyi, Kaihang Zhang, Loutao Shen, Zhebing Wang, Fangce Guo, Panagiotis Angeloudis, Xiqun Michael Chen, and Simon Hu. 2021. "A Domain Adaptation Framework for Short-Term Traffic Prediction." In _2021 IEEE International Intelligent Transportation Systems Conference (ITSC)_, 3564–69. Indianapolis, IN, USA: IEEE.
+
+Zhou, Qishen, Roozbeh Mohammadi, Weiming Zhao, Kaihang Zhang, Lihui Zhang, Yibing Wang, Claudio Roncoli, and Simon Hu. 2021. "Queue Profile Identification at Signalized Intersections with High-Resolution Data from Drones." In _7th International IEEE Conference on Models and Technologies for Intelligent Transportation Systems_. Aquila Atlantis Hotel, Heraklion, Crete, Greece. (Online): IEEE Xplore.
 
 Selected Awards
 ======
-- Hong Kong PhD Fellowship, Hong Kong, 2022
+- Hong Kong Ph.D. Fellowship, Hong Kong, 2022
 - The University of Hong Kong Presidential Scholarship, Hong Kong, 2022
 - Outstanding Graduates of Zhejiang University, Zhejiang, 2021
