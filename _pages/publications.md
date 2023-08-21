@@ -17,8 +17,6 @@ Publications
 ## Working papers
 **Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. 2023. "Operational strategy designs for on-demand food delivery services."
 
-**Zhang, Kaihang** and Jintao Ke $^*$. 2023. "Three-sided network equilibrium and delivery personnel management in on-demand food service."
-
 ## Projects During Master's Study
 - Air Traffic Demand Forecasting (CE 260/CE 290 Project at UC Berkeley) Using Variational Autoencoder, 2022 Sp
 - Public Transportation Ridership Prediction (CE 259 Project at UC Berkely) Using Graph Convolutional Network, 2022 Sp
