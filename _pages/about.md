@@ -24,7 +24,13 @@ Publication
 ======
 Li, Junyi, Ningke Xie, **Kaihang Zhang**, Fangce Guo, Simon Hu, and Xiqun (Michael) Chen $^*$. 2022. "Network-Scale Traffic Prediction via Knowledge Transfer and Regional MFD Analysis." _Transportation Research Part C: Emerging Technologies_ 141 (August): 103719. https://doi.org/10.1016/j.trc.2022.103719.
 
-**Zhang, Kaihang**, Junyi Li, Qishen Zhou, and Simon Hu. 2022. "Short-Term Traffic Prediction with Balanced Domain Adaptation." In _22nd COTA International Conference of Transportation Professionals_, 699–711. Changsha, Hunan Province, China: American Society of Civil Engineers.
+Conference presentations
+======
+**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. "A modeling framework for the three-sided network equilibrium in on-demand food service." Poster presented in the 27th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, December 11-12, 2023.
+
+**Zhang, Kaihang**, and Jintao Ke $^*$. "A modeling framework for the three-sided network equilibrium in on-demand food service." Oral presentation in the 27th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, December 11-12, 2023.
+
+**Zhang, Kaihang**, Junyi Li, Qishen Zhou, and Simon Hu. 2022. "Short-Term Traffic Prediction with Balanced Domain Adaptation." In _22nd COTA International Conference of Transportation Professionals_, 699–711. Changsha, Hunan Province, China. (Online): American Society of Civil Engineers.
 
 Li, Junyi, **Kaihang Zhang**, Loutao Shen, Zhebing Wang, Fangce Guo, Panagiotis Angeloudis, Xiqun Michael Chen, and Simon Hu. 2021. "A Domain Adaptation Framework for Short-Term Traffic Prediction." In _2021 IEEE International Intelligent Transportation Systems Conference (ITSC)_, 3564–69. Indianapolis, IN, USA: IEEE.
 
