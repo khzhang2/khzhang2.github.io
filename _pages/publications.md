@@ -7,7 +7,7 @@ author_profile: false
 
 Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao/home), Principal Investigator: Dr. Jintao Ke.
 
-## Publications
+## Journal publications
 
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
