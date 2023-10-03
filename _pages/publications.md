@@ -14,6 +14,8 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
   {% endfor %}</ul>
 
 ## Working papers
+*: Corresponding author
+
 **Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. 2023. "Operational strategy designs for on-demand food delivery services."
 - An early version of this work will be presented as an oral presentation at the 27th International Conference of Hong Kong Society for Transportation Studies in Hong Kong.
 - An early version of this work will be presented in the 103rd Transportation Research Board (TRB) Annual Meeting in Washington DC, US.
@@ -23,19 +25,19 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 - An early version of this work will be presented in the 103rd Transportation Research Board (TRB) Annual Meeting in Washington DC, US.
 
 ## Projects During Master's Study
-- Air Traffic Demand Forecasting (CE 260/CE 290 Project at UC Berkeley) Using Variational Autoencoder, 2022 Spring
-- Public Transportation Ridership Prediction (CE 259 Project at UC Berkely) Using Graph Convolutional Network, 2022 Spring
+- Air Traffic Demand Forecasting Using Generative Models such as Variational Autoencoder (CE 260&290 Project at UC Berkeley), 2022 Spring
+- Public Transportation Ridership Prediction Considering Spatial Heterogeneity (CE 259 Project at UC Berkely), 2022 Spring
 - Impact of Safty Consideration for Choice of Transportation Modes (CE 264 Project at UC Berkeley), 2022 Spring
-- Transit Demand Generation Study (CE 299 Project at UC Berkeley) Using Multilayer Perceptron, 2022 Spring
-- A Comparative Study of the Network Partition Algorithms (CE 263N Project at UC Berkeley) (K Means, Louvain, Girvan–Newman), 2021 Fall
-- Public Transportation Planning and Optimization Using Continuum Approximation --- A Case Study in the Chicago Area, 2021 Fall
-- Short-term Traffic Forecasting Under Data Insufficient Problems Using Transfer Learning, 2021 Fall
+- Transit Demand Generation Study Using Multilayer Perceptron (CE 299 Project at UC Berkeley), 2022 Spring
+- A Comparative Study of the Network Partition Algorithms (K Means, Louvain, Girvan–Newman; CE 263N Project at UC Berkeley), 2021 Fall
+- Public Transportation Planning and Optimization Using Continuum Approximation --- A Case Study in the Chicago Area (CE 299 Project at UC Berkeley), 2021 Fall
+- Short-term Traffic Forecasting Under Data Insufficiency Using Transfer Learning, 2021 Fall
 
 ## Projects During Undergraduate Study
 - Queue Profile Identification at a Signalized Intersection Using Machine Learning Techniques
 - Real-time Queue Length Estimation at an Isolated Signalized Intersection Using Kalmen Filter
-- CAV Trajectory Optimization for Eco-driving (Using VISSIM-COM)
-- Crowd Dynamics (Pedestrian Simulation) for Evacuation Purpose
+- Optimizing the Trajectrary of Connected and Autonomous Vehicles for Eco-driving (Using VISSIM-COM)
+- Investigating Crowd Dynamics (Pedestrian Simulation) for Emergency Evacuation
 
 ## Open-Sourced Tools
 ### Food Delivery System Simulator
