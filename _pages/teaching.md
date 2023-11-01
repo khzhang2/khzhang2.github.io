@@ -16,6 +16,11 @@ author_profile: false
 - CEE 360 - Structural Engineering, Fall 2020
 - CEE 195 - About Civil Engineering, Fall 2018
 
+## Activities
+- Student helper of INSTR 2023: The 9th International Symposium on Transport Network Resilience, Hong Kong
+- Student helper of HKSTS 2023: The 27th International Conference of Hong Kong Society for Transportation Studies, Hong Kong
+- Student helper of HKSTS 2022: The 26th International Conference of Hong Kong Society for Transportation Studies, Hong Kong
+
 ## Intern
 **Zhejiang Provincial Institute of Communication, Planning, Design & Research Co. Ltd., Zhejiang, China**
 
