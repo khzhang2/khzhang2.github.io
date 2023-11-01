@@ -14,7 +14,7 @@ Education
 ======
 - Ph.D. student, Traffic and Transportation Engineering, The University of Hong Kong.
 
-- Master of Science, Engineering, University of California, Berkeley, 2022.
+- Master of Science, Transportation Engineering, University of California, Berkeley, 2022.
 
 - Bachelor of Engineering, Civil Engineering, Zhejiang University, 2021.
 
