@@ -8,12 +8,12 @@ author_profile: false
 ## Last update on Feb. 4, 2023
 Author: K.Z.
 
-Agent-based model. Multiprocessing.
+Agent-based simulation. CPU multiprocessing.
 
 ## Demonstration animation
-N_v represents the number of idle riders, N_b represents the number of accumulated order batches, p is the customer matching probability, pp is the rider matching probability. The merchant node size represents the number of accumulated orders in this merchant.
+N_v represents the number of idle riders (drivers), N_b represents the number of accumulated order batches, p is the customer matching probability, pp is the rider matching probability. The merchant node size represents the number of accumulated orders in this merchant.
 
-In this demo, the max matching radius r=1 km, max delivery radius R=2 km, batch size (bundling ratio) k=3, and matching interval t=0.005 hour. The order arrival rate $\overline{q}=800$ orders/hour and the total number of riders is $N=200$. 5 merchants are spread in the city, in Kennedy Town, HKU, Central, Wan Chai, and Causeway Bay.
+In this demo, the max matching radius r=1 km, max delivery radius R=2 km, batch size (bundling ratio) k=3, and matching interval t=0.005 hour. The order arrival rate $\overline{q}=800$ orders/hour and the total number of riders is $N=200$. 5 merchants are spread in the city of Singapore.
 
 <img width="889" alt="FD simulator demo" src="https://github.com/khzhang2/khzhang2.github.io/assets/38817831/f5bdf55c-ab16-42f3-98a3-044b348a88c9">
 
