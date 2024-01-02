@@ -15,8 +15,9 @@ N_v represents the number of idle riders, N_b represents the number of accumulat
 
 In this demo, the max matching radius r=1 km, max delivery radius R=2 km, batch size (bundling ratio) k=3, and matching interval t=0.005 hour. The order arrival rate $\overline{q}=800$ orders/hour and the total number of riders is $N=200$. 5 merchants are spread in the city, in Kennedy Town, HKU, Central, Wan Chai, and Causeway Bay.
 
-<video src="https://user-images.githubusercontent.com/38817831/219488679-ef1185e9-418f-4f86-9ec3-410203a7fb3e.mp4" controls="controls" style="max-width: 730px;">
-</video>
+<img width="889" alt="FD simulator demo" src="https://github.com/khzhang2/khzhang2.github.io/assets/38817831/f5bdf55c-ab16-42f3-98a3-044b348a88c9">
+
+Video on Chinese video stream platform Bilibili: [link](https://bilibili.com/video/BV1uM4y1474J/?spm_id_from=333.999.0.0)
 
 ## Github repository [here](https://github.com/khzhang2/FD_Simulator)
 
