@@ -7,9 +7,7 @@ author_profile: false
 
 ## Teaching Assistant
 **The University of Hong Kong, Hong Kong SAR**, September 2022 - present
-- CIVL 3140 - Artificial Intelligence in Civil Engineering, Spring 2024
-- CIVL 7018 - Data Science in Civil Engineering, Spring 2023 & Spring 2024
-- ENGG 1320 - Engineers in the Modern  World, Fall 2022 & Spring 2023
+- Department of Civil Engineering
 
 **Zhejiang University – University of Illinois at Urbana Champaign Institute, Zhejiang, China**, September 2018 - May 2021
 - SE 101 - Engineering Graphics & Design, Spring 2021 & Spring 2020 & Spring 2019
