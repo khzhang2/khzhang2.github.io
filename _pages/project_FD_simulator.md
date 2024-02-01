@@ -5,10 +5,10 @@ title: "Food delivery simulator"
 author_profile: false
 ---
 
-## Last update on Feb. 4, 2023
+## Last code update on Feb. 4, 2023
 Author: K.Z.
 
-Agent-based simulation. CPU multiprocessing.
+Agent-based simulation. CPU multiprocessing for current demos.
 
 ## Demonstration animation
 N_v represents the number of idle riders (drivers), N_b represents the number of accumulated order batches, p is the customer matching probability, pp is the rider matching probability. The merchant node size represents the number of accumulated orders in this merchant.
@@ -17,22 +17,22 @@ In this demo, the max matching radius r=1 km, max delivery radius R=2 km, batch 
 
 <img width="889" alt="FD simulator demo" src="https://github.com/khzhang2/khzhang2.github.io/assets/38817831/f5bdf55c-ab16-42f3-98a3-044b348a88c9">
 
-Video on Chinese video stream platform Bilibili: [link](https://bilibili.com/video/BV1uM4y1474J/?spm_id_from=333.999.0.0)
+The Singapore demo (real road network) is placed on a Chinese video stream platform Bilibili: [link](https://bilibili.com/video/BV1uM4y1474J/?spm_id_from=333.999.0.0)
 
 ## Github repository [here](https://github.com/khzhang2/FD_Simulator)
 
 ## Features
-### How do the riders get matched to customer(s)?
-Batch matching. The customers (of a merchant) are not eligible for matching until the platform has accumulated k orders for this merchant. These k orders are bundled into a batch and matched to one rider. The batch matching process happens every ceiling(t/t_resolution) iteration, where t means the matching interval and t_resolution is the time duration for each iteration.
-### How do riders get their routes?
-Dijkstra method.
-### How do riders decide which customer to serve next?
+### How do we match the riders (aka drivers) to customers?
+Batch matching (see this [paper](https://doi.org/10.1016/j.trb.2019.11.005) for an introduction). The customers (of a merchant) are not eligible for matching until the platform has accumulated k orders for this merchant. These k orders are bundled into a batch and matched to one rider. The batch matching process happens every ceiling(t/t_resolution) iteration, where t means the matching interval and t_resolution is the time duration for each iteration.
+### How do we compute the optimal routes of riders?
+Dijkstra algorithm.
+### How do we consider the riders' decisions on which customer to serve next?
 Follow the order of the customer_nodes, which is pre-defined when updating the customer information on matching. The order is, (2nd closest, 3rd closest, ..., farthest, closest), to make sure the rider will go back (at least be close to) this merchant.
-### How do riders decide where to go when idle?
+### How do we consider riders' decisions on where to go when they are idle?
 Random walk (randomly select the next node and the next next node) and wait for being matched.
-### What do riders do when they completed delivering a batch of orders?
+### What do we consider riders' decisions when they've completed delivering a bundle of orders?
 Random walk and wait for being matched again.
-### How customers are generated?
+### How do we generate customer demands?
 Randomly generate $n_q$ (in codes, it is called num_generated_order) customers on every iteration. $n_q$ is the number of generated customers in this iteration, determined by q_bar, R, and Delta. The platform will randomly choose 1 node from all the nodes in the network as the customer node ID (assuming the probability that the new customer will be located at each node is the same for all nodes) and 1 node from the merchant node set as merchant node ID. Then, the platform will check whether the distance from this customer to her corresponding merchant is less than the maximum delivery distance, R. If yes, keep it, and remove it otherwise. Then repeat the process until the number of newly generated customers reached $n_q$.
 
 ## Rider, platform, and customer attributes
