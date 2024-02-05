@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kaihang Zhang - Homepage"
 title_separator          : "-"
 name                     : &name "Kaihang Zhang"
-description              : &description "PhD Student"
+description              : &description "PhD Candidate"
 description              : &description "Traffic and Transportation Engineering | HKU"
 url                      : https://khzhang2.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -84,7 +84,7 @@ author:
   name             : "Kaihang Zhang"
   avatar           : "photo_zkh4.png"
   bio              : |
-    G-01 Haking Wong Bldg <br>
+    64, 231 Haking Wong Building, <br>
     The University of Hong Kong <br>
     <br>
   location         : "Central and Western, Hong Kong"
