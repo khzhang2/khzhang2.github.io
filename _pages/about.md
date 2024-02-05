@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong under the supervision of Dr. Jintao Ke. My research interest is in the modeling and analysis of emerging mobility services such as ride-sourcing and on-demand food delivery services. My research also includes system-wide optimization (continuous) and design, as well as uncertainty management. I'm also passionate about traffic state forecasting and public transportation system designs. <br>
+I am currently a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong under the supervision of Dr. Jintao Ke. My research interest is in the modeling and analysis of emerging mobility services such as ride-sourcing and on-demand food delivery services. I'm also fascinated by system-wide optimization (continuous) and design, as well as uncertainty management. Before HKU, I worked on traffic state analysis and public transportation system designs. <br>
 
 Education
 ======
