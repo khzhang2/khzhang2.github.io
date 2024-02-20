@@ -16,11 +16,11 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 ## Working papers
 *: Corresponding author
 
-**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. (2023). Operational strategy designs for on-demand food delivery services.
+**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. (2023). Operational strategy designs for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
-**Zhang, Kaihang**, and Jintao Ke $^*$. (2024). Three-sided network equilibrium model of on-demand food delivery services.
+**Zhang, Kaihang**, and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
