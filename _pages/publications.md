@@ -20,7 +20,7 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
-**Zhang, Kaihang**, and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
+**Zhang, Kaihang** and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
@@ -44,16 +44,3 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 - Agent-based simulation with further possibility of secondary development
 - Demo based on Hong Kong island (a topological network) and Singapore (real-world geometric road network)
 - Introduction and more details [here](https://khzhang2.github.io/project/FD_simulator/)
-
-
-### Regional Partitioning Dataset of Hong Kong
-- A dataset containing the partitioning data of Hong Kong (vertex coordinates, connectivity, number of restaurants in each region, geometry, etc).
-- Collaborated with Mr. Jiadong Ren (summer intern student in 2023)
-- More details [here](https://github.com/khzhang2/HK_region_partition)
-
-<img src="../files/hk_partition.png" alt="HK partition results" width="400"/>
-
-
-### 2-D Frame Structure Solver Using the Direct Stiffness Method
-- By inputting the external loads and the structure layout, users can obtain the element-end forces of a structure, as well as the resultant forces at each supporting node. The internal moment, shear force, and normal force diagrams of the structure are also shown in the result. Additionally, the nodal displacement is also calculated and the deformed shape is visualized as well.
-- Github code [here](https://github.com/khzhang2/Structural_Calculator)
