@@ -8,11 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong. My research interest is in the modeling and analysis of emerging mobility services such as ride-sourcing and on-demand food delivery services. I'm also fascinated by system-wide optimization (continuous) and design, as well as uncertainty management. Before HKU, I worked on traffic state analysis and public transportation system designs. <br>
+I am a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong. My research interest is in the modeling and analysis of emerging mobility services such as ride-sourcing and on-demand food delivery services. Before HKU, I worked on traffic state analysis and public transportation system designs. <br>
 
 Education and Experience
 ======
 - Ph.D. Candidate, Traffic and Transportation Engineering, The University of Hong Kong.
+
+- Visiting Research Student, Lab for Innovative Mobility Systems, University of Michigan, Ann Arbor, 2024.
 
 - Master of Science, Transportation Engineering, University of California, Berkeley, 2022.
 
