@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong. My research interest is in the modeling and analysis of emerging mobility services such as ride-sourcing and on-demand food delivery services. Before HKU, I worked on traffic state analysis and public transportation system designs. <br>
+I am a Ph.D. candidate of Traffic and Transportation Engineering at The University of Hong Kong. My research interest includes the modeling and optimization of on-demand mobility systems such as ride-sourcing and on-demand food delivery services. Before HKU, I worked on traffic state analysis and public transportation system designs. <br>
 
 Education and Experience
 ======
