@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: false
 ---
 
-Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao/home), Principal Investigator: Dr. Jintao Ke.
+Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao/team).
 
 ## Journal publications
 
@@ -24,7 +24,7 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
-## Projects During Master's Study at Berkeley
+## Projects during master's study at Berkeley
 - Air Traffic Demand Forecasting Using Generative Models such as Variational Autoencoder (CE 260&290 Project), 2022 Spring
 - Public Transportation Ridership Prediction Considering Spatial Heterogeneity (CE 259 Project), 2022 Spring
 - Impact of Safty Consideration for Choice of Transportation Modes (CE 264 Project), 2022 Spring
@@ -33,14 +33,14 @@ Member of the [Smart Mobility Lab at HKU](https://sites.google.com/view/kejintao
 - Public Transportation Planning and Optimization Using Continuum Approximation --- A Case Study in the Chicago Area (CE 299 Project), 2021 Fall
 - Short-term Traffic Forecasting Under Data Insufficiency Using Knowledge Transfer (Domain Adaptation), 2021 Fall
 
-## Projects During Undergraduate Study at ZJUI
+## Projects during undergraduate study at ZJUI
 - Queue Profile Identification at a Signalized Intersection Using Aerial Images
 - Real-time Queue Length Estimation at an Isolated Signalized Intersection Using Kalmen Filter
 - Optimizing the Trajectrary of Connected and Autonomous Vehicles for Eco-driving (Using VISSIM-COM)
 - Investigating Crowd Dynamics (Pedestrian Simulation) for Emergency Evacuation
 
-## Open-Sourced Tools
-### Food Delivery System Simulator
+## Some codes
+### Food delivery simulator
 - Agent-based simulation with further possibility of secondary development
 - Demo based on Hong Kong island (a topological network) and Singapore (real-world geometric road network)
 - Introduction and more details [here](https://khzhang2.github.io/project/FD_simulator/)
