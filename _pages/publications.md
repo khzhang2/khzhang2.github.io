@@ -20,7 +20,7 @@ Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Me
 - An early version of this work will be presented in the 2024 INFORMS Annual Meeting in Seattle.
 - An early version of this work will be presented in the 104th Transportation Research Board (TRB) Annual Meeting (2025) in Washington, DC.
 
-**Zhang, Kaihang** and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
+**Zhang, Kaihang**, Jintao Ke $^*$, and Xiaolei Wang. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
