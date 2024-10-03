@@ -16,11 +16,15 @@ Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Me
 ## Working papers
 *: Corresponding author
 
-**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. (2023). Operational strategy designs for on-demand food delivery services. Submitted.
+**Zhang, Kaihang**, Jintao Ke $^*$, and Yafeng Yin. (2024). Optimization of ETA considering driver bundling behavior in on-demand food delivery market. Working paper.
+- An early version of this work will be presented in the 2024 INFORMS Annual Meeting in Seattle.
+- An early version of this work will be presented in the 104th Transportation Research Board (TRB) Annual Meeting (2025) in Washington, DC.
+
+**Zhang, Kaihang** and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
-**Zhang, Kaihang** and Jintao Ke $^*$. (2024). A three-sided network equilibrium model for on-demand food delivery services. Submitted.
+**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. (2024). Operational strategy designs for on-demand food delivery services. Submitted.
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
