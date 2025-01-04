@@ -6,13 +6,13 @@ author_profile: false
 ---
 
 ## Teaching Assistantship
-**The University of Hong Kong**, September 2022 - present
+**The University of Hong Kong**, September 2022--date
 - Department of Civil Engineering
 
-**Zhejiang University – University of Illinois at Urbana Champaign Institute (ZJUI)**, September 2018 - May 2021
-- SE 101 - Engineering Graphics & Design, Spring 2021 & Spring 2020 & Spring 2019
-- CEE 360 - Structural Engineering, Fall 2020
-- CEE 195 - About Civil Engineering, Fall 2018
+**Zhejiang University – University of Illinois at Urbana Champaign Institute (ZJUI)**, September 2018--May 2021
+- SE 101---Engineering Graphics & Design, Spring 2021 & Spring 2020 & Spring 2019
+- CEE 360---Structural Engineering, Fall 2020
+- CEE 195---About Civil Engineering, Fall 2018
 
 ## Services
 - Conference helper of INSTR 2023: The 9th International Symposium on Transport Network Resilience, Hong Kong
