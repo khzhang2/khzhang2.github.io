@@ -34,7 +34,7 @@ Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Me
 - Impact of Safty Consideration for Choice of Transportation Modes (CE 264 Project), 2022 Spring
 - Transit Demand Generation Study Using Multilayer Perceptron (CE 299 Project), 2022 Spring
 - A Comparative Study of the Network Partition Algorithms (K Means, Louvain, Girvan–Newman; CE 263N Project), 2021 Fall
-- Public Transportation Planning and Optimization Using Continuum Approximation --- A Case Study in the Chicago Area (CE 299 Project), 2021 Fall
+- Public Transportation Planning and Optimization Using Continuum Approximation---A Case Study in the Chicago Area (CE 299 Project), 2021 Fall
 - Short-term Traffic Forecasting Under Data Insufficiency Using Knowledge Transfer (Domain Adaptation), 2021 Fall
 
 ## Projects during undergraduate study at ZJUI
