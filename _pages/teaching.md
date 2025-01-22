@@ -7,12 +7,13 @@ author_profile: false
 
 ## Teaching Assistantship
 **The University of Hong Kong**, 2022--date
-- Department of Civil Engineering
+- CIVL 3140---Artificial Intelligence in Civil Engineering
+- CIVL 7018---Data Science for Civil Engineering
 
 **Zhejiang University – University of Illinois at Urbana Champaign Institute (ZJUI)**, 2018--2021
-- SE 101---Engineering Graphics & Design, Spring 2021 & Spring 2020 & Spring 2019
-- CEE 360---Structural Engineering, Fall 2020
-- CEE 195---About Civil Engineering, Fall 2018
+- SE 101---Engineering Graphics & Design
+- CEE 360---Structural Engineering
+- CEE 195---About Civil Engineering
 
 ## Services
 - Conference helper of INSTR 2023: The 9th International Symposium on Transport Network Resilience, Hong Kong
