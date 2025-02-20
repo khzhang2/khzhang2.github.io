@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1>Simulate VRP</h1>
+    <h1>Simulate VRP (ALNS)</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Points Visualization</title>
+    <title>Simulate VRP (ALNS)</title>
     <!-- Add internal CSS for styling -->
     <style>
         body {
@@ -17,15 +17,27 @@
             margin: 0 auto;
         }
 
-        #plot-container {
-            width: 100%;
-            height: 600px;
+        #vrpPlot {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #costLog {
+            width: 400px;
+            height: 400px;
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .slider-container {
+        .Rslider-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .kslider-container {
             margin-bottom: 20px;
             text-align: center;
         }
@@ -33,46 +45,50 @@
 </head>
 <body>
     <div class="container">
-        <div class="slider-container">
-            <input type="range" id="rSlider" min="1" max="50" value="25">
-            <span id="rValue">R is 25</span>
+        <div class="Rslider-container">
+            <input type="range" id="rSlider" min="1000" max="3500" value="1000">
+            <span id="rValue">R is 1 km</span>
         </div>
 
+        <div class="kslider-container">
+            <input type="range" id="kSlider" min="1" max="10" value="8">
+            <span id="kValue">k is 8</span>
+        </div>
+
+        <button id="myButton">Reset customer demand</button>
+
         <!-- Add plot container -->
-        <div id="plot-container"></div>
+        <div id="vrpPlot"></div>
+        <div id="costLog"></div>
     </div>
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script>
         // Your JavaScript code remains the same
-        let currentR = 25;
         let animationFrameId;
-
-        // function generatePoints(radius) {
-        //     const points = [];
-        //     for (let i = 0; i < 100; i++) {
-        //         let x, y;
-        //         do {
-        //             x = (Math.random() - 1 / 2) * 100;
-        //             y = (Math.random() - 1 / 2) * 100;
-        //         } while (Math.sqrt(x*x + y*y) > radius);
-        //         points.push({x: x, y: y});
-        //     }
-        //     points[0] = {x:0, y:0};
-        //     return points;
-        // }
 
         function generatePoints(radius) {
             const points = [];
             const totCustomer = 100;
             for (let i = 0; i < totCustomer; i++) {
                 let x, y;
-                x = (Math.random() - 1 / 2) * 100;
-                y = (Math.random() - 1 / 2) * 100;
+                x = (Math.random() - 1 / 2) * 10000;
+                y = (Math.random() - 1 / 2) * 10000;
                 points.push({x: x, y: y});
             }
             points[0] = {x:0, y:0};
 
+            const eligiblePoints = [];
+            for (let i = 0; i < points.length; i++){
+                if (Math.sqrt(points[i].x**2 + points[i].y**2) < radius) {
+                    eligiblePoints.push({x:points[i].x, y:points[i].y});
+                }
+            }
+            return [points, eligiblePoints];
+        }
+
+        function screenPoints(radius, points) {
+            // points is allPoints
             const eligiblePoints = [];
             for (let i = 0; i < points.length; i++){
                 if (Math.sqrt(points[i].x**2 + points[i].y**2) < radius) {
@@ -84,17 +100,8 @@
 
 
 
-        function updatePlot(newR) {
-            // const layoutUpdate = {
-            //     title: `Random Points within Radius R=${newR}`,
-            //     xaxis: {range: [-newR * 2, newR * 2]},
-            //     yaxis: {range: [-newR * 2, newR * 2]}
-            // };
-
-            // Plotly.update('plot-container', {}, layoutUpdate);
-
+        function updatePlot(newR, newCapacity, newPoints) {
             // Add new points
-            const newPoints = generatePoints(newR);
             const trace = {
                 x: newPoints.map(p => p.x),
                 y: newPoints.map(p => p.y),
@@ -102,15 +109,44 @@
                 marker: {color: '#1f77b4', size: 8}
             };
             const layout = {
-                title: `Random Points within Radius R=${newR}`,
-                xaxis: {range: [-50, 50]},
-                yaxis: {range: [-50, 50]},
+                title: `Random Points within Radius R=${newR/1000} km<br>Number of customers ${newPoints.length}<br>vehicle capacity k=${newCapacity}`,
+                xaxis: {range: [-5000, 5000]},
+                yaxis: {range: [-5000, 5000]},
                 showlegend: false
             };
 
-            Plotly.addTraces('plot-container', [trace]);
-            Plotly.relayout('plot-container', layout)
-            return newPoints
+            Plotly.addTraces('vrpPlot', [trace]);
+            Plotly.relayout('vrpPlot', layout);
+        }
+
+        function calAvgCost(costs) {
+            avgCost = 0;
+            for (i=0; i < costs.length; i++) {
+                avgCost = avgCost + costs[i] / 2;
+            }
+            avgCost = avgCost / costs.length;
+            return avgCost
+        }
+
+        function logCost(k, R, costs, bestSolution, cost_R0) {
+            const colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+            avgCost = calAvgCost(costs);
+            avgCost = avgCost - cost_R0;
+            const trace = {
+                x: [R],
+                y: [avgCost],
+                mode: 'markers',
+                marker: {color: colors[k - 1], size: 8},
+                name: ''
+            };
+            const layout = {
+                title: `Log of cost and (k, R)`,
+                showlegend: true
+            };
+            if (bestSolution.length >= 1) {
+                Plotly.addTraces('costLog', [trace]);
+                Plotly.relayout('costLog', layout);
+            }
         }
 
         function setupVRP(points, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true) {
@@ -222,11 +258,242 @@
             return vehicles;
         }
 
+        class VRPtabu {
+            constructor(distanceMatrix, numVehicles, capacity, demands) {
+                this.distanceMatrix = distanceMatrix;
+                this.numVehicles = numVehicles;
+                this.capacity = capacity;
+                this.demands = demands;
+                this.numLocations = Object.keys(distanceMatrix).length;
+            }
+
+            initializeSolution() {
+                const solution = Array.from({ length: this.numVehicles }, () => []);
+                for (let i = 1; i < this.numLocations; i++) {
+                    solution[i % this.numVehicles].push(i);
+                }
+                return solution;
+            }
+
+            calculateRouteCost(route) {
+                if (route.length === 0) return 0;
+                let cost = this.distanceMatrix[0][route[0]];
+                for (let i = 0; i < route.length - 1; i++) {
+                    cost += this.distanceMatrix[route[i]][route[i + 1]];
+                }
+                cost += this.distanceMatrix[route[route.length - 1]][0];
+                return cost;
+            }
+
+            calculateTotalCost(solution) {
+                return solution.reduce((totalCost, route) => totalCost + this.calculateRouteCost(route), 0);
+            }
+
+            isFeasible(route) {
+                const totalDemand = route.reduce((total, location) => total + this.demands[location], 0);
+                return totalDemand <= this.capacity;
+            }
+
+            getNeighbors(solution) {
+                const neighbors = [];
+                for (let i = 0; i < solution.length; i++) {
+                    for (let j = 0; j < solution.length; j++) {
+                        if (i !== j && solution[i].length > 0) {
+                            const newSolution = JSON.parse(JSON.stringify(solution));
+                            const node = newSolution[i].pop();
+                            newSolution[j].push(node);
+                            if (this.isFeasible(newSolution[i]) && this.isFeasible(newSolution[j])) {
+                                neighbors.push(newSolution);
+                            }
+                        }
+                    }
+                }
+                return neighbors;
+            }
+            tabuSearch(maxIterations, tabuTenure) {
+                let currentSolution = this.initializeSolution();
+                let bestSolution = JSON.parse(JSON.stringify(currentSolution));
+                let bestCost = this.calculateTotalCost(bestSolution);
+
+                const tabuList = new Map();
+
+                for (let iteration = 0; iteration < maxIterations; iteration++) {
+                    const neighbors = this.getNeighbors(currentSolution);
+                    let bestNeighbor = null;
+                    let bestNeighborCost = Infinity;
+
+                    for (const neighbor of neighbors) {
+                        const neighborCost = this.calculateTotalCost(neighbor);
+                        if (neighborCost < bestNeighborCost && !tabuList.has(JSON.stringify(neighbor))) {
+                            bestNeighbor = neighbor;
+                            bestNeighborCost = neighborCost;
+                        }
+                    }
+
+                    if (!bestNeighbor) {
+                        break;
+                    }
+
+                    currentSolution = bestNeighbor;
+                    const currentCost = this.calculateTotalCost(currentSolution);
+
+                    if (currentCost < bestCost) {
+                        bestSolution = JSON.parse(JSON.stringify(currentSolution));
+                        bestCost = currentCost;
+                    }
+
+                    tabuList.set(JSON.stringify(currentSolution), tabuTenure);
+
+                    for (const [key, value] of tabuList) {
+                        if (value <= 1) {
+                            tabuList.delete(key);
+                        } else {
+                            tabuList.set(key, value - 1);
+                        }
+                    }
+                }
+
+                return bestSolution;
+            }
+
+            getRouteDistances(solution) {
+                return solution.map(route => this.calculateRouteCost(route));
+            }
+        }
+
+        // Example usage
+        // const points = [
+        //     { x: 0, y: 0 }, // Depot
+        //     { x: 10, y: 10 },
+        //     { x: 20, y: 20 },
+        //     { x: 5000, y: 10 },
+        //     { x: 40, y: 20 }
+        // ];
+
+        // const vehicleCapacity = 20;
+        // const demands = [0, 10, 10, 10, 10]; // The first element is the depot with 0 demand
+        // const numVehicles = 2;
+
+        // const { distanceMatrix, depot, customers, vehicles } = setupVRP(points, vehicleCapacity);
+
+        // const vrp = new VRPtabu(distanceMatrix, numVehicles, vehicleCapacity, demands);
+        // const maxIterations = 100;
+        // const tabuTenure = 5;
+
+        // const bestSolution = vrp.tabuSearch(maxIterations, tabuTenure);
+
+        // console.log("Best Solution:", bestSolution);
+        // console.log("Best Solution Cost:", vrp.calculateTotalCost(bestSolution));
+
+        class VRPalns {
+            constructor(distanceMatrix, numVehicles, capacity, demands) {
+                this.distanceMatrix = distanceMatrix;
+                this.numVehicles = numVehicles;
+                this.capacity = capacity;
+                this.demands = demands;
+                this.numLocations = Object.keys(distanceMatrix).length;
+            }
+
+            initializeSolution() {
+                const solution = Array.from({ length: this.numVehicles }, () => []);
+                for (let i = 1; i < this.numLocations; i++) {
+                    solution[i % this.numVehicles].push(i);
+                }
+                return solution;
+            }
+
+            calculateRouteCost(route) {
+                if (route.length === 0) return 0;
+                let cost = this.distanceMatrix[0][route[0]];
+                for (let i = 0; i < route.length - 1; i++) {
+                    cost += this.distanceMatrix[route[i]][route[i + 1]];
+                }
+                cost += this.distanceMatrix[route[route.length - 1]][0];
+                return cost;
+            }
+
+            calculateTotalCost(solution) {
+                return solution.reduce((totalCost, route) => totalCost + this.calculateRouteCost(route), 0);
+            }
+
+            isFeasible(route) {
+                const totalDemand = route.reduce((total, location) => total + this.demands[location], 0);
+                return totalDemand <= this.capacity;
+            }
+
+            removeCustomers(solution, numToRemove) {
+                const removedCustomers = [];
+                for (let i = 0; i < numToRemove; i++) {
+                    const vehicleIndex = Math.floor(Math.random() * solution.length);
+                    const route = solution[vehicleIndex];
+                    if (route.length > 0) {
+                        const customerIndex = Math.floor(Math.random() * route.length);
+                        removedCustomers.push(route.splice(customerIndex, 1)[0]);
+                    }
+                }
+                return removedCustomers;
+            }
+
+            greedyInsert(solution, customers) {
+                for (const customer of customers) {
+                    let bestCost = Infinity;
+                    let bestVehicle = -1;
+                    let bestPosition = -1;
+
+                    for (let i = 0; i < solution.length; i++) {
+                        for (let j = 0; j <= solution[i].length; j++) {
+                            const newRoute = [...solution[i].slice(0, j), customer, ...solution[i].slice(j)];
+                            if (this.isFeasible(newRoute)) {
+                                const cost = this.calculateRouteCost(newRoute);
+                                if (cost < bestCost) {
+                                    bestCost = cost;
+                                    bestVehicle = i;
+                                    bestPosition = j;
+                                }
+                            }
+                        }
+                    }
+
+                    if (bestVehicle !== -1) {
+                        solution[bestVehicle].splice(bestPosition, 0, customer);
+                    } else {
+                        console.error('Failed to insert customer:', customer);
+                    }
+                }
+            }
+
+            alns(maxIterations) {
+                let currentSolution = this.initializeSolution();
+                let bestSolution = JSON.parse(JSON.stringify(currentSolution));
+                let bestCost = this.calculateTotalCost(bestSolution);
+
+                for (let iteration = 0; iteration < maxIterations; iteration++) {
+                    const numToRemove = Math.floor(Math.random() * this.numLocations / 2) + 1;
+                    const removedCustomers = this.removeCustomers(currentSolution, numToRemove);
+
+                    this.greedyInsert(currentSolution, removedCustomers);
+
+                    const currentCost = this.calculateTotalCost(currentSolution);
+
+                    if (currentCost < bestCost) {
+                        bestSolution = JSON.parse(JSON.stringify(currentSolution));
+                        bestCost = currentCost;
+                    }
+                }
+
+                return bestSolution;
+            }
+
+            getRouteDistances(solution) {
+                return solution.map(route => this.calculateRouteCost(route));
+            }
+        }
+
     
-        function visualizeRoutes(vrpSolution, points) {
-            const routes = [];
+        function visualizeRoutes(vrpSolution, points, bestDists) {
+            const routes = [{x: 0, y: 0}];
             for (let i = 0; i < vrpSolution.length; i++){
-                result = vrpSolution[i].route.map(function(index) {
+                result = [0, ...vrpSolution[i]].map(function(index) {
                     return points[index];
                 });
                 coords = result.reduce((acc, obj) => {
@@ -236,47 +503,137 @@
                 }, {x: [], y: []})
                 routes.push({x: coords.x, y: coords.y});
             }
-            Plotly.addTraces('plot-container', routes)
-            
+            Plotly.addTraces('vrpPlot', routes)
+            console.log(`Avg Cost: ${calAvgCost(bestDists)}`);
+        }
+        
+        var maxIterations = 2000;
+        var tabuTenure = 5;
+        currentR = 1000;
+        currentk = 8;
+
+        // plot for log
+        const colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+        const layout_log = {
+            title: `Log of cost and (k, R)`,
+            showlegend: true
+        };
+        Plotly.newPlot('costLog', [{x:[0], y:[0], marker:{size:0}, name: ''}]);
+        for (i=0; i<colors.length; i++) {
+            const trace_log = {
+                x: [0],
+                y: [0],
+                mode: 'markers',
+                marker: {color: colors[i], size: 4},
+                name: `k=${i+1}`
+            };
+            Plotly.addTraces('costLog', [trace_log]);
+            Plotly.relayout('costLog', layout_log);
         }
 
-
+        document.getElementById("myButton").addEventListener("click", function() {
+            
         // Initialize plot
-        const initialPoints = generatePoints(currentR);
+        currentR = 1000;
+        currentk = 8;
+        [allPoints, newPoints] = generatePoints(currentR);
         const layout = {
-            title: `Random Points within Radius R=${currentR}`,
-            xaxis: {range: [-50, 50]},
-            yaxis: {range: [-50, 50]},
+            title: `Random Points within Radius R=${currentR/1000} km<br>Number of customers ${newPoints.length}<br>vehicle capacity k=${currentk}`,
+            xaxis: {range: [-5000, 5000]},
+            yaxis: {range: [-5000, 5000]},
             showlegend: false
         };
 
         const trace = {
-            x: initialPoints.map(p => p.x),
-            y: initialPoints.map(p => p.y),
+            x: newPoints.map(p => p.x),
+            y: newPoints.map(p => p.y),
             mode: 'markers',
             marker: {color: '#1f77b4', size: 8}
         };
 
-        Plotly.newPlot('plot-container', [trace], layout);
-        const vrpSetup = setupVRP(initialPoints, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true);
-        const vrpSolution = solveVRP(vrpSetup);
-        visualizeRoutes(vrpSolution, initialPoints)
+        Plotly.newPlot('vrpPlot', [trace], layout);
+        
+        const demands = new Array(newPoints.length).fill(1);
+        demands[0] = 0;
+        const { distanceMatrix, depot, customers, vehicles } = setupVRP(newPoints, currentk);
+        
+        if ((newPoints.length - 1) % currentk == 0) {
+            numVehicles = Math.floor((newPoints.length - 1) / currentk);
+        } else {
+            numVehicles = Math.floor((newPoints.length - 1) / currentk) + 1;
+        }
+        const vrp = new VRPalns(distanceMatrix, numVehicles, currentk, demands);
+        
+        const bestSolution = vrp.alns(maxIterations, tabuTenure);
+        const bestDists = vrp.getRouteDistances(bestSolution);
+        // cost_R0 = calAvgCost(bestDists);
+        cost_R0 = 0;
+        visualizeRoutes(bestSolution, newPoints, bestDists)
+
+        
+        logCost(currentk, currentR, bestDists, bestSolution, cost_R0);
+    });
 
         // Update radius display
         document.getElementById('rSlider').addEventListener('input', function(e) {
             currentR = e.target.valueAsNumber;
-            document.getElementById('rValue').textContent = `R is ${currentR}`;
-            graphDiv = document.getElementById('plot-container');
+            document.getElementById('kSlider').addEventListener('input', function(ee) {
+                currentk = ee.target.valueAsNumber;
+            });
+            document.getElementById('rValue').textContent = `R is ${currentR/1000}`;
+            graphDiv = document.getElementById('vrpPlot');
             const numPlots = graphDiv.data.length;
             for (let i = 0; i < numPlots; i++) {
-                Plotly.deleteTraces('plot-container', [0]);
+                Plotly.deleteTraces('vrpPlot', [0]); // clear existing plots
             }
             
-            newPoints = updatePlot(currentR);
-            const vrpSetup = setupVRP(newPoints, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true);
-            const vrpSolution = solveVRP(vrpSetup);
-            visualizeRoutes(vrpSolution, newPoints);
+            newPoints = screenPoints(currentR, allPoints);
+            updatePlot(currentR, currentk, newPoints);
+            const demands = new Array(newPoints.length).fill(1);
+            demands[0] = 0;
+            const { distanceMatrix, depot, customers, vehicles } = setupVRP(newPoints, currentk);
+            if ((newPoints.length - 1) % currentk == 0) {
+                numVehicles = Math.floor((newPoints.length - 1) / currentk);
+            } else {
+                numVehicles = Math.floor((newPoints.length - 1) / currentk) + 1;
+            }
+            const vrp = new VRPalns(distanceMatrix, numVehicles, currentk, demands);
+            const bestSolution = vrp.alns(maxIterations, tabuTenure);
+            const bestDists = vrp.getRouteDistances(bestSolution);
+            visualizeRoutes(bestSolution, newPoints, bestDists);
+            logCost(currentk, currentR, bestDists, bestSolution, cost_R0);
         });
+
+        // Update bundle display
+        document.getElementById('kSlider').addEventListener('input', function(ee) {
+            currentk = ee.target.valueAsNumber;
+            document.getElementById('rSlider').addEventListener('input', function(e) {
+                currentR = e.target.valueAsNumber;
+            });
+            document.getElementById('kValue').textContent = `k is ${currentk}`;
+            graphDiv = document.getElementById('vrpPlot');
+            const numPlots = graphDiv.data.length;
+            for (let i = 0; i < numPlots; i++) {
+                Plotly.deleteTraces('vrpPlot', [0]); // clear existing plots
+            }
+            
+            newPoints = screenPoints(currentR, allPoints);
+            updatePlot(currentR, currentk, newPoints);
+            const demands = new Array(newPoints.length).fill(1);
+            demands[0] = 0;
+            const { distanceMatrix, depot, customers, vehicles } = setupVRP(newPoints, currentk);
+            if ((newPoints.length - 1) % currentk == 0) {
+                numVehicles = Math.floor((newPoints.length - 1) / currentk);
+            } else {
+                numVehicles = Math.floor((newPoints.length - 1) / currentk) + 1;
+            }
+            const vrp = new VRPalns(distanceMatrix, numVehicles, currentk, demands);
+            const bestSolution = vrp.alns(maxIterations, tabuTenure);
+            const bestDists = vrp.getRouteDistances(bestSolution);
+            visualizeRoutes(bestSolution, newPoints, bestDists);
+            logCost(currentk, currentR, bestDists, bestSolution, cost_R0);
+        });
+
     </script>
 </body>
 </html>
