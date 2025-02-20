@@ -14,6 +14,7 @@ Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Me
   {% endfor %}</ul>
 
 ## Talks
+
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk.html %}
   {% endfor %}</ul>
