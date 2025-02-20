@@ -3,7 +3,7 @@ title: "Tactical Operations of Service Region Dimensioning, Bundling, and Matchi
 collection: talks
 type: "Talk"
 permalink: /talks/hksts2023-agg
-venue: "The University of Hong Kong Institute for Transport Studies"
+venue: "The University of Hong Kong Institute of Transport Studies"
 date: 2025-02-27
 location: "Hong Kong"
 ---
