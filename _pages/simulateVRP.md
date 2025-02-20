@@ -1,0 +1,288 @@
+---
+layout: archive
+permalink: /project/simulateVRP/
+title: "Simulation of VRP under different R and k"
+author_profile: false
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Points Visualization</title>
+    <!-- Add internal CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #plot-container {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .slider-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider-container">
+            <input type="range" id="rSlider" min="1" max="50" value="25">
+            <span id="rValue">R is 25</span>
+        </div>
+
+        <!-- Add plot container -->
+        <div id="plot-container"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        // Your JavaScript code remains the same
+        let currentR = 25;
+        let animationFrameId;
+
+        // function generatePoints(radius) {
+        //     const points = [];
+        //     for (let i = 0; i < 100; i++) {
+        //         let x, y;
+        //         do {
+        //             x = (Math.random() - 1 / 2) * 100;
+        //             y = (Math.random() - 1 / 2) * 100;
+        //         } while (Math.sqrt(x*x + y*y) > radius);
+        //         points.push({x: x, y: y});
+        //     }
+        //     points[0] = {x:0, y:0};
+        //     return points;
+        // }
+
+        function generatePoints(radius) {
+            const points = [];
+            const totCustomer = 100;
+            for (let i = 0; i < totCustomer; i++) {
+                let x, y;
+                x = (Math.random() - 1 / 2) * 100;
+                y = (Math.random() - 1 / 2) * 100;
+                points.push({x: x, y: y});
+            }
+            points[0] = {x:0, y:0};
+
+            const eligiblePoints = [];
+            for (let i = 0; i < points.length; i++){
+                if (Math.sqrt(points[i].x**2 + points[i].y**2) < radius) {
+                    eligiblePoints.push({x:points[i].x, y:points[i].y});
+                }
+            }
+            return eligiblePoints;
+        }
+
+
+
+        function updatePlot(newR) {
+            // const layoutUpdate = {
+            //     title: `Random Points within Radius R=${newR}`,
+            //     xaxis: {range: [-newR * 2, newR * 2]},
+            //     yaxis: {range: [-newR * 2, newR * 2]}
+            // };
+
+            // Plotly.update('plot-container', {}, layoutUpdate);
+
+            // Add new points
+            const newPoints = generatePoints(newR);
+            const trace = {
+                x: newPoints.map(p => p.x),
+                y: newPoints.map(p => p.y),
+                mode: 'markers',
+                marker: {color: '#1f77b4', size: 8}
+            };
+            const layout = {
+                title: `Random Points within Radius R=${newR}`,
+                xaxis: {range: [-50, 50]},
+                yaxis: {range: [-50, 50]},
+                showlegend: false
+            };
+
+            Plotly.addTraces('plot-container', [trace]);
+            Plotly.relayout('plot-container', layout)
+            return newPoints
+        }
+
+        function setupVRP(points, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true) {
+            // Calculate distance matrix between all points
+            const distanceMatrix = {};
+            for (let i = 0; i < points.length; i++) {
+                distanceMatrix[i] = {};
+                for (let j = 0; j < points.length; j++) {
+                    let dx = points[i].x - points[j].x;
+                    let dy = points[i].y - points[j].y;
+                    if (useDistanceMatrix) {
+                        // Euclidean distance
+                        distanceMatrix[i][j] = Math.sqrt(dx * dx + dy * dy);
+                    } else {
+                        // Manhattan distance
+                        distanceMatrix[i][j] = Math.abs(dx) + Math.abs(dy);
+                    }
+                }
+            }
+
+            // Set up VRP problem variables
+            const depot = points[depotIndex];
+            const customers = points.filter((_, index) => index !== depotIndex);
+
+            // Create a vehicle fleet
+            const vehicles = Array(1).fill({
+                route: [depotIndex],
+                load: 0,
+                distanceTravelled: 0,
+                vehicleCapacity: vehicleCapacity
+            });
+
+            console.log("VRP Parameters:");
+            console.log(`- Number of points: ${points.length}`);
+            console.log(`- Vehicle capacity: ${vehicleCapacity}`);
+            console.log(`- Depot location: (${depot.x}, ${depot.y})`);
+
+            // Return the setup for further processing
+            return {
+                distanceMatrix,
+                depot,
+                customers,
+                vehicles,
+                points
+            };
+        }
+
+        function solveVRP(vrpSetup) {
+            // Extract necessary data from the VRP setup
+            const { points, vehicles: existingVehicles, distanceMatrix } = vrpSetup;
+            const depotIndex = existingVehicles[0].route[0]; // Extract depot index from the first vehicle's route
+            const vehicleCapacity = existingVehicles[0].vehicleCapacity
+
+            // Determine customer indices (excluding depot)
+            const customerIndices = points
+                .map((_, index) => index)
+                .filter(idx => idx !== depotIndex);
+
+            const totalCustomers = customerIndices.length;
+            
+            // Calculate the required number of vehicles
+            const vehicleCount = Math.floor(totalCustomers / vehicleCapacity) + 1;
+
+            // Initialize vehicles with depot as start and end point
+            const vehicles = Array.from({ length: vehicleCount }, () => ({
+                route: [depotIndex],
+                load: 0,
+                distanceTravelled: 0
+            }));
+            console.log(`- Number of vehicles: (${vehicleCount})`);
+
+            // Track unvisited customers
+            let unvisitedCustomers = [...customerIndices];
+
+            // Assign customers to each vehicle using nearest neighbor heuristic
+            for (const vehicle of vehicles) {
+                let currentLocation = depotIndex;
+                while (vehicle.load < vehicleCapacity && unvisitedCustomers.length > 0) {
+                    // Find the nearest unvisited customer
+                    let nearestCustomerIdx = -1;
+                    let minDistance = Infinity;
+                    for (let i = 0; i < unvisitedCustomers.length; i++) {
+                        const customerIdx = unvisitedCustomers[i];
+                        const distance = distanceMatrix[currentLocation][customerIdx];
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            nearestCustomerIdx = i;
+                        }
+                    }
+
+                    if (nearestCustomerIdx === -1) break; // No more customers
+
+                    const customer = unvisitedCustomers[nearestCustomerIdx];
+                    // Update vehicle details
+                    vehicle.route.push(customer);
+                    vehicle.distanceTravelled += minDistance;
+                    vehicle.load += 1; // Each customer has a demand of 1 unit
+                    currentLocation = customer;
+                    // Remove customer from unvisited
+                    unvisitedCustomers.splice(nearestCustomerIdx, 1);
+                }
+
+                // Return to depot and update distance
+                const returnDistance = distanceMatrix[currentLocation][depotIndex];
+                // vehicle.route.push(depotIndex);
+                vehicle.distanceTravelled += returnDistance;
+            }
+
+            return vehicles;
+        }
+
+    
+        function visualizeRoutes(vrpSolution, points) {
+            const routes = [];
+            for (let i = 0; i < vrpSolution.length; i++){
+                result = vrpSolution[i].route.map(function(index) {
+                    return points[index];
+                });
+                coords = result.reduce((acc, obj) => {
+                    acc.x.push(obj.x);
+                    acc.y.push(obj.y);
+                    return acc;
+                }, {x: [], y: []})
+                routes.push({x: coords.x, y: coords.y});
+            }
+            Plotly.addTraces('plot-container', routes)
+            
+        }
+
+
+        // Initialize plot
+        const initialPoints = generatePoints(currentR);
+        const layout = {
+            title: `Random Points within Radius R=${currentR}`,
+            xaxis: {range: [-50, 50]},
+            yaxis: {range: [-50, 50]},
+            showlegend: false
+        };
+
+        const trace = {
+            x: initialPoints.map(p => p.x),
+            y: initialPoints.map(p => p.y),
+            mode: 'markers',
+            marker: {color: '#1f77b4', size: 8}
+        };
+
+        Plotly.newPlot('plot-container', [trace], layout);
+        const vrpSetup = setupVRP(initialPoints, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true);
+        const vrpSolution = solveVRP(vrpSetup);
+        visualizeRoutes(vrpSolution, initialPoints)
+
+        // Update radius display
+        document.getElementById('rSlider').addEventListener('input', function(e) {
+            currentR = e.target.valueAsNumber;
+            document.getElementById('rValue').textContent = `R is ${currentR}`;
+            graphDiv = document.getElementById('plot-container');
+            const numPlots = graphDiv.data.length;
+            for (let i = 0; i < numPlots; i++) {
+                Plotly.deleteTraces('plot-container', [0]);
+            }
+            
+            newPoints = updatePlot(currentR);
+            const vrpSetup = setupVRP(newPoints, vehicleCapacity = 10, depotIndex = 0, useDistanceMatrix = true);
+            const vrpSolution = solveVRP(vrpSetup);
+            visualizeRoutes(vrpSolution, newPoints);
+        });
+    </script>
+</body>
+</html>
