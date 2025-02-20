@@ -30,10 +30,6 @@ Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Me
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
-**Zhang, Kaihang**, Jintao Ke $^*$, Hai Wang, and Yafeng Yin. Operational strategy designs for on-demand food delivery services. Submitted.
-- An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
-- An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
-
 ## Projects during master's study at Berkeley
 - Air Traffic Demand Forecasting Using Generative Models such as Variational Autoencoder (CE 260&290 Project), 2022 Spring
 - Public Transportation Ridership Prediction Considering Spatial Heterogeneity (CE 259 Project), 2022 Spring
