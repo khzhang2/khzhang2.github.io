@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: false
 ---
 
-Visiting research student at [LIMOS @ UMich](https://limos.engin.umich.edu/). Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao/team).
+Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao). Student Fellow of [The University of Hong Kong Institute of Transport Studies](https://www.institute-of-transport-studies.hku.hk/about).
 
 ## Journal publications
 
