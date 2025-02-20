@@ -7,5 +7,3 @@ venue: "HKSTS Conference"
 date: 2023-12-11
 location: "Hong Kong"
 ---
-
-The early version of "Tactical Operations of Service Region Dimensioning, Bundling, and Matching for On-Demand Food Delivery Services." See paper for details.
