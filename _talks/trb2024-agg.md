@@ -3,7 +3,7 @@ title: "Operational strategy designs for on-demand food delivery services."
 collection: talks
 type: "Talk"
 permalink: /talks/trb2024-agg
-venue: "Walter E. Washington Convention Center"
+venue: "Transportation Research Board (TRB) Annual Meeting 2024"
 date: 2024-01-09
 location: "Washington, DC"
 ---
