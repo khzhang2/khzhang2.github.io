@@ -1,5 +1,5 @@
 ---
-title: "Operations and Management of On0demand Food Delivery Services."
+title: "Operations and Management of On-demand Food Delivery Services."
 collection: talks
 type: "Talk"
 permalink: /talks/hkurps2024
