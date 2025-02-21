@@ -30,6 +30,15 @@ Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao)
 - An early version of this work has been presented in the 27th International Conference of Hong Kong Society for Transportation Studies (2023) in Hong Kong.
 - An early version of this work has been presented in the 103rd Transportation Research Board (TRB) Annual Meeting (2024) in Washington, DC.
 
+## Some codes
+### Food delivery simulator
+- Agent-based simulation with further possibility of secondary development
+- Demo based on Hong Kong island (a topological network) and Singapore (real-world geometric road network)
+- Introduction and more details [https://khzhang2.github.io/project/FD_simulator/](https://khzhang2.github.io/project/FD_simulator/)
+
+### Simulate VRP
+- A tool that you can play with on [https://khzhang2.github.io/_pages/simulateVRP.html](https://khzhang2.github.io/_pages/simulateVRP.html).
+
 ## Projects during master's study at Berkeley
 - Air Traffic Demand Forecasting Using Generative Models such as Variational Autoencoder (CE 260&290 Project), 2022 Spring
 - Public Transportation Ridership Prediction Considering Spatial Heterogeneity (CE 259 Project), 2022 Spring
@@ -44,12 +53,3 @@ Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao)
 - Real-time Queue Length Estimation at an Isolated Signalized Intersection Using Kalmen Filter
 - Optimizing the Trajectrary of Connected and Autonomous Vehicles for Eco-driving (Using VISSIM-COM)
 - Investigating Crowd Dynamics (Pedestrian Simulation) for Emergency Evacuation
-
-## Some codes
-### Food delivery simulator
-- Agent-based simulation with further possibility of secondary development
-- Demo based on Hong Kong island (a topological network) and Singapore (real-world geometric road network)
-- Introduction and more details [https://khzhang2.github.io/project/FD_simulator/](https://khzhang2.github.io/project/FD_simulator/)
-
-### Simulate VRP
-- A tool that you can play with on [https://khzhang2.github.io/_pages/simulateVRP.html](https://khzhang2.github.io/_pages/simulateVRP.html).
