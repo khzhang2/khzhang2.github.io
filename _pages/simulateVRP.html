@@ -530,10 +530,47 @@
             Plotly.addTraces('costLog', [trace_log]);
             Plotly.relayout('costLog', layout_log);
         }
+        
+        // Initialize plot
+        currentR = 1000;
+        currentk = 8;
+        [allPoints, newPoints] = generatePoints(currentR);
+        const layout = {
+            title: `Random Points within Radius R=${currentR/1000} km<br>Number of customers ${newPoints.length}<br>vehicle capacity k=${currentk}`,
+            xaxis: {range: [-5000, 5000]},
+            yaxis: {range: [-5000, 5000]},
+            showlegend: false
+        };
+
+        const trace = {
+            x: newPoints.map(p => p.x),
+            y: newPoints.map(p => p.y),
+            mode: 'markers',
+            marker: {color: '#1f77b4', size: 8}
+        };
+
+        Plotly.newPlot('vrpPlot', [trace], layout);
+        
+        const demands = new Array(newPoints.length).fill(1);
+        demands[0] = 0;
+        const { distanceMatrix, depot, customers, vehicles } = setupVRP(newPoints, currentk);
+        
+        if ((newPoints.length - 1) % currentk == 0) {
+            numVehicles = Math.floor((newPoints.length - 1) / currentk);
+        } else {
+            numVehicles = Math.floor((newPoints.length - 1) / currentk) + 1;
+        }
+        const vrp = new VRPalns(distanceMatrix, numVehicles, currentk, demands);
+        
+        const bestSolution = vrp.alns(maxIterations, tabuTenure);
+        const bestDists = vrp.getRouteDistances(bestSolution);
+        // cost_R0 = calAvgCost(bestDists);
+        cost_R0 = 0;
+        visualizeRoutes(bestSolution, newPoints, bestDists)
 
         document.getElementById("myButton").addEventListener("click", function() {
             
-        // Initialize plot
+        // Initialize plot if button clicked
         currentR = 1000;
         currentk = 8;
         [allPoints, newPoints] = generatePoints(currentR);
