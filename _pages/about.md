@@ -12,15 +12,15 @@ I am a Ph.D. student of Traffic and Transportation Engineering at The University
 
 Education
 ======
-- Ph.D. student, Traffic and Transportation Engineering, The University of Hong Kong.
+- Ph.D. student in Traffic and Transportation Engineering, Smart Mobility Lab, The University of Hong Kong.
 
-- Visiting Research Student, Lab for Innovative Mobility Systems, University of Michigan, Ann Arbor, 2024.
+- Visiting Research Student, Lab for Innovative Mobility Systems (LIMOS), University of Michigan, Ann Arbor, 2024.
 
-- Master of Science, Transportation Engineering, University of California, Berkeley, 2022.
+- Master of Science in Transportation Engineering, University of California, Berkeley.
 
-- Bachelor of Science, Civil Engineering, University of Illinois at Urbana-Champaign, 2021.
+- Bachelor of Science in Civil Engineering, University of Illinois at Urbana-Champaign.
 
-- Bachelor of Engineering, Civil Engineering, Zhejiang University, 2021.
+- Bachelor of Engineering in Civil Engineering, Zhejiang University.
 
 Research interests
 ======
