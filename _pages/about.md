@@ -24,7 +24,7 @@ Education
 
 Research interests
 ======
-- Economic analysis
-- Network analysis
+- Transportation economic analysis
+- Transprotation network analysis
 - Optimization
-- Smart mobility
+- Smart mobility, shared mobility
