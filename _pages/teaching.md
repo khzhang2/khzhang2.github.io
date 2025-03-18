@@ -6,9 +6,10 @@ author_profile: false
 ---
 
 ## Selected Awards
-- Hong Kong Ph.D. Fellowship, Hong Kong, 2022
-- The University of Hong Kong Presidential Scholarship, Hong Kong, 2022
-- Outstanding Graduates of Zhejiang University, Zhejiang, 2021
+- HKPF Additional Fund, 2023
+- Hong Kong Ph.D. Fellowship, 2022
+- The University of Hong Kong Presidential Scholarship, 2022
+- Outstanding Graduates of Zhejiang University, 2021
 
 ## Teaching Assistantship
 **The University of Hong Kong**, 2022--date
