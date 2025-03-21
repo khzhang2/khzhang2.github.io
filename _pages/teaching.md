@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Work and Teach"
+title: "Experiences"
 permalink: /workandteach/
 author_profile: false
 ---
