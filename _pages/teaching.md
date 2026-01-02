@@ -6,7 +6,8 @@ author_profile: false
 ---
 
 ## Selected Awards
-- HKPF Additional Fund, 2023
+- Innovation Award (Co-PI), HKU, 2025, HKD 50,000
+- HKPF Additional Fund, 2023, HKD 20,000
 - Hong Kong Ph.D. Fellowship, 2022
 - The University of Hong Kong Presidential Scholarship, 2022
 - Outstanding Graduates of Zhejiang University, 2021
@@ -17,7 +18,7 @@ author_profile: false
 - CIVL 3140---Artificial Intelligence in Civil Engineering
 - CIVL 7018---Data Science for Civil Engineering
 
-**Zhejiang University – University of Illinois at Urbana Champaign Institute (ZJUI)**, 2018--2021
+**Zhejiang University – University of Illinois at Urbana-Champaign Institute (ZJUI)**, 2018--2021
 - SE 101---Engineering Graphics & Design
 - CEE 360---Structural Engineering
 - CEE 195---About Civil Engineering
