@@ -6,8 +6,8 @@ author_profile: false
 ---
 
 ## Selected Awards
-- Innovation Award (Co-PI), HKU, 2025, HKD 50,000
-- HKPF Additional Fund, 2023, HKD 20,000
+- Innovation Award (Co-PI; HKD 50,000), HKU, 2025
+- HKPF Additional Fund (HKD 20,000), 2023
 - Hong Kong Ph.D. Fellowship, 2022
 - The University of Hong Kong Presidential Scholarship, 2022
 - Outstanding Graduates of Zhejiang University, 2021
