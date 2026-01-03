@@ -24,6 +24,7 @@ author_profile: false
 - CEE 195---About Civil Engineering
 
 ## Services
+- Conference helper of HKSTS 2025: The 29th International Conference of Hong Kong Society for Transportation Studies
 - Research Postgraduate (RPg) Student Mentor of the Faculty of Engineering of HKU
 - Conference helper of INSTR 2023: The 9th International Symposium on Transport Network Resilience
 - Conference helper of HKSTS 2023: The 27th International Conference of Hong Kong Society for Transportation Studies
