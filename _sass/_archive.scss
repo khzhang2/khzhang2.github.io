@@ -10,8 +10,18 @@
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    @include span(12 of 12);
+  }
+
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .reference-list, .reference-list p {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    margin-bottom: 1em;
   }
 
   a {

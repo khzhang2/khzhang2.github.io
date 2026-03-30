@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kaihang Zhang - Homepage"
-title_separator          : "-"
+title                    : "Kaihang Zhang | Homepage"
+title_separator          : "|"
 name                     : &name "Kaihang Zhang"
 description              : &description "PhD student"
 description              : &description "Traffic and Transportation Engineering | HKU"

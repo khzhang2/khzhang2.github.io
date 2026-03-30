@@ -14,16 +14,26 @@ I am a Ph.D. student in Traffic and Transportation Engineering at The University
 
 ## Research interests
 <ul class="pill-list">
-  <li>On-demand mobility modeling and optimization</li>
+  <li>System analysis for on-demand mobility</li>
+  <li>Modeling of complex systems, equilibrium analysis, and optimization</li>
   <li>Transportation economic analysis</li>
-  <li>Transportation network analysis</li>
-  <li>Smart mobility and shared mobility</li>
-  <li>Optimization methods</li>
+  <li>AI-empowered behavioral analysis</li>
+  <li>Intelligent transportation systems</li>
 </ul>
+<!-- - On-demand mobility modeling and optimization
+- Transportation economic analysis
+- Transportation network analysis
+- Smart mobility and shared mobility
+- Optimization methods -->
 
 ## Education
-- Ph.D. student in Traffic and Transportation Engineering, Smart Mobility Lab, The University of Hong Kong
-- Visiting Research Student, Lab for Innovative Mobility Systems (LIMOS), University of Michigan, Ann Arbor, 2024
-- Master of Science in Transportation Engineering, University of California, Berkeley
-- Bachelor of Science in Civil Engineering, University of Illinois at Urbana-Champaign
-- Bachelor of Engineering in Civil Engineering, Zhejiang University
+- The University of Hong Kong <span style="float: right;">2026 (expected)</span>
+  - Ph.D. in Traffic and Transportation Engineering
+- University of Michigan, Ann Arbor <span style="float: right;">2024</span>
+  - Visiting Research Student, Lab for Innovative Mobility Systems (LIMOS)
+- University of California, Berkeley <span style="float: right;">2023</span>
+  - Master of Science in Transportation Engineering
+- University of Illinois at Urbana-Champaign <span style="float: right;">2022</span>
+  - Bachelor of Science in Civil Engineering
+- Zhejiang University <span style="float: right;">2022</span>
+  - Bachelor of Engineering in Civil Engineering
