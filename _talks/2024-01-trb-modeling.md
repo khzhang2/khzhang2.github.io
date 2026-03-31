@@ -10,3 +10,7 @@ authors: "**Zhang, Kaihang**, Jintao Ke, Hai Wang, and Yafeng Yin"
 ---
 
 Zhang, Kaihang, Jintao Ke, Hai Wang, and Yafeng Yin. “Modeling the On-demand Food Delivery Service Considering the Service Region with Adjustable Size and Bundling Delivery.” Paper presented at the 103-rd Transportation Research Board (TRB) Annual Meeting, Washington, DC, USA, January 2024.
+
+Early version of paper
+
+`Tactical Operations of Service Region Dimensioning, Bundling, and Matching for On-Demand Food Delivery Services`

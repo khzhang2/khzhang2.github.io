@@ -10,3 +10,7 @@ authors: "**Zhang, Kaihang** and Jintao Ke"
 ---
 
 Zhang, Kaihang and Jintao Ke. “A Modeling Framework for the Three-Sided Network Equilibrium in On-Demand Food Service.” Paper presented at the 27-th International Conference of Hong Kong Society for Transportation Studies (HKSTS), Hong Kong, China, December 2023.
+
+Early version of paper
+
+`A Three-sided Network Equilibrium Model for On-demand Food Delivery Services`
