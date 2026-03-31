@@ -23,9 +23,6 @@ Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao)
 **Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. “Time Constraint–Driven Bundling and Matching with Network Effect in On-Demand Delivery.” Paper presented at the 2026 Transportation Science and Logistics (INFORMS TSL) Conference, Cambridge, MA, USA, July 2026.
 {: .reference-list }
 
-**Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. “Optimizing Time of Arrival Rather Than Estimating: Joint Operation with Pricing for On-Demand Food Delivery Systems.” Paper accepted by the World Conference on Transport Research – WCTR 2026, Toulouse, France, July 2026.
-{: .reference-list }
-
 **Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. “Time Constraint–Driven Bundling and Matching with Network Effect in On-Demand Delivery.” Paper presented at the 29-th International Conference of Hong Kong Society for Transportation Studies (HKSTS), Hong Kong, China, December 2025.
 {: .reference-list }
 

@@ -18,17 +18,17 @@ author_profile: false
 - CIVL 3140: Artificial Intelligence in Civil Engineering
 - CIVL 7018: Data Science for Civil Engineering
 
-**Zhejiang University - University of Illinois at Urbana-Champaign Institute (ZJUI)** <span style="float: right;">2018--2021</span>
+**Zhejiang University -- University of Illinois at Urbana-Champaign Institute (ZJUI)** <span style="float: right;">2018--2021</span>
 - SE 101: Engineering Graphics & Design
 - CEE 360: Structural Engineering
 - CEE 195: About Civil Engineering
 
 ## Service
-- Conference helper, HKSTS 2025: The 29th International Conference of Hong Kong Society for Transportation Studies
-- Research Postgraduate (RPg) Student Mentor, Faculty of Engineering, HKU
-- Conference helper, INSTR 2023: The 9th International Symposium on Transport Network Resilience
-- Conference helper, HKSTS 2023: The 27th International Conference of Hong Kong Society for Transportation Studies
-- Conference helper, HKSTS 2022: The 26th International Conference of Hong Kong Society for Transportation Studies
+- Conference helper, HKSTS 2025: The 29th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2025</span>
+- Research Postgraduate (RPg) Student Mentor, Faculty of Engineering, HKU<span style="float: right;">2025--present</span>
+- Conference helper, INSTR 2023: The 9th International Symposium on Transport Network Resilience<span style="float: right;">2023</span>
+- Conference helper, HKSTS 2023: The 27th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2023</span>
+- Conference helper, HKSTS 2022: The 26th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2022</span>
 
 ## Internship
 **Zhejiang Provincial Institute of Communication, Planning, Design & Research Co. Ltd., Zhejiang** <span style="float: right;">Summer 2020</span>
