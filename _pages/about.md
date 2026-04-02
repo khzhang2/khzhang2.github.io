@@ -30,10 +30,10 @@ I am a Ph.D. student in Traffic and Transportation Engineering at The University
 - The University of Hong Kong <span style="float: right;">2026 (expected)</span>
   - Ph.D. in Traffic and Transportation Engineering
 - University of Michigan, Ann Arbor <span style="float: right;">2024</span>
-  - Visiting Research Student, Lab for Innovative Mobility Systems (LIMOS)
+  - _Visiting Research Student_, Lab for Innovative Mobility Systems (LIMOS)
 - University of California, Berkeley <span style="float: right;">2023</span>
-  - Master of Science in Transportation Engineering
+  - M.S. in Transportation Engineering
 - University of Illinois at Urbana-Champaign <span style="float: right;">2022</span>
-  - Bachelor of Science in Civil Engineering
+  - B.S. in Civil Engineering
 - Zhejiang University <span style="float: right;">2022</span>
-  - Bachelor of Engineering in Civil Engineering
+  - B.Eng. in Civil Engineering
