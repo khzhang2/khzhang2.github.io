@@ -16,7 +16,7 @@ Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao)
 ## Working papers
 *: Corresponding author
 
-**Zhang, Kaihang**, Ce Wang, Jintao Ke $^*$, and Yafeng Yin. Optimization of ETA considering driver bundling behavior in on-demand food delivery market. Working paper.
+**Zhang, Kaihang**, Ce Wang, Jintao Ke $^*$, and Yafeng Yin. Let Couriers Roam: How ETA Slack Unlocks Network Effects in On-Demand Food Delivery Markets. Under review.
 {: .reference-list }
 
 ## Conference experience
