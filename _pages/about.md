@@ -9,15 +9,16 @@ redirect_from:
 ---
 
 <div class="intro">
-I am a Ph.D. student in Traffic and Transportation Engineering at The University of Hong Kong. My research interests include modeling and optimization of on-demand mobility systems such as ride-sourcing and on-demand food delivery services. Prior to HKU, I worked on traffic state analysis and public transportation system design.
+I earned my Ph.D. degree of Traffic and Transportation Engineering from The University of Hong Kong where I'm fortunate to be advised by Prof. Jintao Ke. My research interests lie at the intersection of AI and theoretical modeling for economics and complex systems. I am fortunate to have worked with Prof. Yafeng Yin during my visit at University of Michigan, Ann Arbor. Prior to HKU, I worked on traffic state analysis and public transportation system design, advised by Dr. Junyi Li and Prof. Simon Hu.
 </div>
 
 ## Research interests
 <ul class="pill-list">
+  <li>Next-generation economic modeling and analysis</li>
+  <li>AI for science</li>
+  <li>AI-empowered social simulation and behavioral analysis</li>
   <li>System analysis for on-demand mobility</li>
-  <li>Modeling of complex systems, equilibrium analysis, and optimization</li>
-  <li>Transportation economic analysis</li>
-  <li>AI-empowered behavioral analysis</li>
+  <li>Modeling of complex systems, economics, and urban logistics</li>
   <li>Intelligent transportation systems</li>
 </ul>
 <!-- - On-demand mobility modeling and optimization
@@ -27,13 +28,8 @@ I am a Ph.D. student in Traffic and Transportation Engineering at The University
 - Optimization methods -->
 
 ## Education
-- The University of Hong Kong <span style="float: right;">2026 (expected)</span>
-  - Ph.D. in Traffic and Transportation Engineering
-- University of Michigan, Ann Arbor <span style="float: right;">2024</span>
-  - _Visiting Research Student_, Lab for Innovative Mobility Systems (LIMOS)
-- University of California, Berkeley <span style="float: right;">2023</span>
-  - M.S. in Transportation Engineering
-- University of Illinois at Urbana-Champaign <span style="float: right;">2022</span>
-  - B.S. in Civil Engineering
-- Zhejiang University <span style="float: right;">2022</span>
-  - B.Eng. in Civil Engineering
+- The University of Hong Kong; Ph.D. <span style="float: right;"> </span>
+- University of Michigan, Ann Arbor; _Visiting Research Student_ <span style="float: right;"> </span>
+- University of California, Berkeley; M.S. <span style="float: right;"> </span>
+- University of Illinois at Urbana-Champaign; B.S. <span style="float: right;"> </span>
+- Zhejiang University; B.Eng. <span style="float: right;"> </span>

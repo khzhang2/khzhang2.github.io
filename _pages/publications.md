@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: false
 ---
 
-Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao). Student Fellow of [The University of Hong Kong Institute of Transport Studies](https://www.institute-of-transport-studies.hku.hk/about).
+Member of the [Smart Mobility Lab @ HKU](https://hku-kejintao.github.io/). Student Fellow of [The University of Hong Kong Institute of Transport Studies](https://www.institute-of-transport-studies.hku.hk/about).
 
 ## Journal publications
 
@@ -14,9 +14,11 @@ Member of the [Smart Mobility Lab @ HKU](https://sites.google.com/view/kejintao)
   {% endfor %}
 
 ## Working papers
-*: Corresponding author
 
-**Zhang, Kaihang**, Ce Wang, Jintao Ke $^*$, and Yafeng Yin. Let Couriers Roam: How ETA Slack Unlocks Network Effects in On-Demand Food Delivery Markets. Under review.
+**Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. Let Couriers Roam: How ETA Slack Unlocks Network Effects in On-Demand Food Delivery Markets. Under review.<br>
+
+Wang, Ce, **Kaihang Zhang**, Siyuan Feng, and Jintao Ke. Pricing and matching for ride-hailing markets under the broadcasting mechanism. Under review. Preprint at SSRN: [https://ssrn.com/abstract=7240784](https://ssrn.com/abstract=7240784)
+
 {: .reference-list }
 
 ## Conference experience

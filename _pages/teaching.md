@@ -6,6 +6,7 @@ author_profile: false
 ---
 
 ## Selected awards
+- HKPF Additional Fund <span style="float: right;">2026</span>
 - Innovation Award (Co-PI), HKU <span style="float: right;">2025</span>
 - HKPF Additional Fund <span style="float: right;">2023</span>
 - Hong Kong Ph.D. Fellowship <span style="float: right;">2022</span>
@@ -13,7 +14,7 @@ author_profile: false
 - Outstanding Graduates of Zhejiang University <span style="float: right;">2021</span>
 
 ## Teaching assistantship
-**The University of Hong Kong** <span style="float: right;">2022--present</span>
+**The University of Hong Kong** <span style="float: right;">2022--2026</span>
 - ENGG 1320: Engineers in the Modern World
 - CIVL 3140: Artificial Intelligence in Civil Engineering
 - CIVL 7018: Data Science for Civil Engineering
@@ -25,7 +26,7 @@ author_profile: false
 
 ## Service
 - Conference helper, HKSTS 2025: The 29th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2025</span>
-- Research Postgraduate (RPg) Student Mentor, Faculty of Engineering, HKU<span style="float: right;">2025--present</span>
+- Research Postgraduate (RPg) Student Mentor, Faculty of Engineering, HKU<span style="float: right;">2025--2026</span>
 - Conference helper, INSTR 2023: The 9th International Symposium on Transport Network Resilience<span style="float: right;">2023</span>
 - Conference helper, HKSTS 2023: The 27th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2023</span>
 - Conference helper, HKSTS 2022: The 26th International Conference of Hong Kong Society for Transportation Studies<span style="float: right;">2022</span>
