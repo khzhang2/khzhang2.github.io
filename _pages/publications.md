@@ -15,7 +15,7 @@ Member of the [Smart Mobility Lab @ HKU](https://hku-kejintao.github.io/). Stude
 
 ## Working papers
 
-**Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. Let Couriers Roam: How ETA Slack Unlocks Network Effects in On-Demand Food Delivery Markets. Under review.<br>
+**Zhang, Kaihang**, Ce Wang, Jintao Ke, and Yafeng Yin. Let Couriers Roam: How ETA Slack Unlocks Network Effects in On-Demand Food Delivery Markets. Under review. Preprint at SSRN: [https://ssrn.com/abstract=7523598](https://ssrn.com/abstract=7523598) <br>
 
 Wang, Ce, **Kaihang Zhang**, Siyuan Feng, and Jintao Ke. Pricing and matching for ride-hailing markets under the broadcasting mechanism. Under review. Preprint at SSRN: [https://ssrn.com/abstract=7240784](https://ssrn.com/abstract=7240784)<br>
 
