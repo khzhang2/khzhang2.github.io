@@ -218,6 +218,10 @@
 
   li {
     white-space: nowrap;
+
+    &.author__employer {
+      white-space: normal;
+    }
   }
 
   a {

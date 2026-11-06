@@ -5,7 +5,6 @@ permalink: /research/
 author_profile: false
 ---
 
-Member of the [Smart Mobility Lab @ HKU](https://hku-kejintao.github.io/). Student Fellow of [The University of Hong Kong Institute of Transport Studies](https://www.institute-of-transport-studies.hku.hk/about).
 
 ## Journal publications
 

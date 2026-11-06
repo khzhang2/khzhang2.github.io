@@ -10,8 +10,8 @@ locale                   : "en-US"
 title                    : "Kaihang Zhang | Homepage"
 title_separator          : "|"
 name                     : &name "Kaihang Zhang"
-description              : &description "PhD student"
-description              : &description "Traffic and Transportation Engineering | HKU"
+description              : &description "Research Scientist"
+description              : &description "AI for complex systems and operations"
 url                      : https://khzhang2.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "khzhang2/khzhang2.github.io"
@@ -84,11 +84,10 @@ author:
   name             : "Kaihang Zhang"
   avatar           : "photo_zkh4.png"
   bio              : |
-    64, 231 Haking Wong Building, <br>
-    The University of Hong Kong <br>
+    AI for complex systems and operations <br>
     <br>
-  location         : "Central and Western,<br> Hong Kong Island"
-  employer         :
+  location         : "Singapore"
+  employer         : "School of Computing and Information Systems, Singapore Management University"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=a6n-2TUAAAAJ&hl=en"
   email            :

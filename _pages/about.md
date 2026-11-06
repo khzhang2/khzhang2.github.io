@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div class="intro">
-I am a Research Scientist of School of Computing and Information Science of Singapore Management University. My research interests lie at the intersection of AI and theoretical modeling for economics and complex systems. I earned my Ph.D. degree of Traffic and Transportation Engineering from The University of Hong Kong where I'm fortunate to be advised by Prof. Jintao Ke. During my PhD, I am also fortunate to have worked with Prof. Yafeng Yin during my visit at University of Michigan, Ann Arbor. Prior to HKU, I worked on traffic state analysis and public transportation system design, advised by Dr. Junyi Li and Prof. Simon Hu.
+I am a Research Scientist of School of Computing and Information Systems at Singapore Management University. My research interests lie at the intersection of AI and theoretical modeling for economics and complex systems. I earned my Ph.D. degree of Traffic and Transportation Engineering from The University of Hong Kong where I'm fortunate to be advised by Prof. Jintao Ke. During my PhD, I am also fortunate to have worked with Prof. Yafeng Yin during my visit at University of Michigan, Ann Arbor. Prior to HKU, I worked on traffic state analysis and public transportation system design, advised by Dr. Junyi Li and Prof. Simon Hu.
 </div>
 
 ## Research interests
