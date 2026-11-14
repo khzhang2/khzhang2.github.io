@@ -9,13 +9,13 @@ redirect_from:
 ---
 
 <div class="intro">
-I am a Research Scientist of School of Computing and Information Systems at Singapore Management University. My research interests lie at the intersection of AI and theoretical modeling for economics and complex systems. I earned my Ph.D. degree of Traffic and Transportation Engineering from The University of Hong Kong where I'm fortunate to be advised by Prof. Jintao Ke. During my PhD, I am also fortunate to have worked with Prof. Yafeng Yin during my visit at University of Michigan, Ann Arbor. Prior to HKU, I worked on traffic state analysis and public transportation system design, advised by Dr. Junyi Li and Prof. Simon Hu.
+I am a Research Scientist of School of Computing and Information Systems at Singapore Management University, working with Prof. Hai Wang, Prof. Hoong Chuin Lau, and Prof. Daniel Zhichao Zheng. My research interests lie at the intersection of AI and theoretical modeling for economics and complex systems, with applications across over urban logistics and resource allocation under emergency. I earned my Ph.D. degree of Traffic and Transportation Engineering from The University of Hong Kong where I'm fortunate to be advised by Prof. Jintao Ke. During my PhD, I am also fortunate to have worked with Prof. Yafeng Yin during my visit at University of Michigan, Ann Arbor. Prior to HKU, I worked on traffic state analysis and public transportation system design, advised by Dr. Junyi Li and Prof. Simon Hu.
 </div>
 
 ## Research interests
 <ul class="pill-list">
   <li>Next-generation economic modeling and analysis</li>
-  <li>AI for science</li>
+  <li>AI for operations research and management</li>
   <li>AI-empowered social simulation and behavioral analysis</li>
   <li>System analysis for on-demand mobility</li>
   <li>Modeling of complex systems, economics, and urban logistics</li>
